@@ -1,11 +1,13 @@
 # Tutorial: Deploy an Amazon ECS Service
 
 ### Before (Blue):
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/8006439b-d42b-405d-9b55-b2d12fecf46c)
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/1c477eb7-50a2-49ec-be89-b869659453e5)
+
 
 ### After (Green):
 
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/41bf772a-185e-47b7-8313-0ce663d6ec72)
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/6c5d7dd3-bfcd-44fc-b24e-7de3f0dce4db)
+
 
 ---
 
@@ -15,7 +17,8 @@ Step :one: : Set up your infrastructure
 2. Install cdk module, and run the command: `cd ECS/ && npm update`
 3. run the command: `cdk deploy --all --require-approval never`
 4. After you successfully deploy the app, you should see Simple PHP App website via ALB DNS Name:
-<img width="617" alt="image" src="https://github.com/aws-k68pex/code-training-ecs-deploy/assets/29943707/b939a603-c257-46dd-b8ec-8f27a19e05e2">
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/388164f5-8311-4024-8760-5808cc4b704b)
+
 
 
 Step :two: : Create a new Task Definition and update the `appspec.yml` file
@@ -40,12 +43,15 @@ Step :three: : Deploy your Amazon ECS application:
 Step :four: : View CodeDeploy deployment status
 1. Monitor Deployment status,
 2. Once the deployment is in Step 2, then click **Reroute traffic**
-<img width="1039" alt="image" src="https://github.com/aws-k68pex/code-training-ecs-deploy/assets/29943707/e872c470-fe71-4d9a-acbb-3ccae107b09d">
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/b69204f8-5fe0-426f-bc22-b3e69c982823)
+
 
 3. CodeDeploy starts to route traffic to the new task sets:
-<img width="1039" alt="image" src="https://github.com/aws-k68pex/code-training-ecs-deploy/assets/29943707/3a3684fe-67ce-4541-92bb-68e54cbbe0f9">
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/8d2ca4a2-9b78-41d0-b857-67a05af360a5)
+
 
 4. Open the DNS name of the ALB to test the deployment, and keep refreshing the browser, you should see an nginx web page
-<img width="767" alt="image" src="https://github.com/aws-k68pex/code-training-ecs-deploy/assets/29943707/42e03d9c-616e-4979-b25d-101e76a0241e">
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/3ca2f7a5-ee0e-4573-8c6c-002f9233d777)
+
 
 5. After 5 minutes, all the traffic will be routed to the new task sets.
