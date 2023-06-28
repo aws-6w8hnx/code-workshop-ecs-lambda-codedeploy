@@ -10,5 +10,5 @@ const code_deploy_ecs_stack = new ecsCodeDeployStack(app, 'cdk-code-workshop-ecs
   env: env,
 });
 cdk.Tags.of(code_deploy_ecs_stack).add('auto-delete', 'no');
-cdk.Tags.of(code_deploy_ecs_stack).add('managedBy', 'cdk');
+cdk.Tags.of(code_deploy_ecs_stack).add('managedBy',   'cdk');
 cdk.Tags.of(code_deploy_ecs_stack).add('environment', 'dev');
