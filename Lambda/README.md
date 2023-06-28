@@ -198,9 +198,3 @@ Q: Why Deployment Status stuck `In progress`?
 
 - Lambda version:
 ![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/77f5823a-8a07-4b01-95c2-bf909fb8f6b0)
-
-5. Found this [post](https://stackoverflow.com/questions/74792293/aws-lambda-cannot-find-module-aws-sdk-in-build-a-basic-web-application-tutoria), which mentioned that the nodejs18 using AWS SDK v3 and it does not support AWS SDK v2
-6. Update the lambda code to nodejs16 or import AWS SDk v3.
-7. AFter updating the lambda to nodejs16, deployment works fine:
-![image](https://github.com/aws-k68pex/code-workshop-ecs-lambda-codedeploy/assets/29943707/6ee87e3a-2652-48ae-964d-6e91178f4069)
-
