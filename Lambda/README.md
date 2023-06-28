@@ -2,10 +2,10 @@
 
 ## Step 1: Set up your infrastructure
 
-1. Create a s3 bucket in your account:
+1. Create an s3 bucket in your account:
 - Name: `code-workshop-lambda-deploy-117645918752-us-east-1-s3`
 
-2. In the root directory, run the following:
+2. In the Lambda directory, run the following:
 ```
 sam package \
   --template-file template.yml \
@@ -38,7 +38,7 @@ aws lambda invoke \
 Description: In this step, you use the `myDateTimeFunction.js` file to deploy the updated function. This triggers CodeDeploy to deploy it by shifting production traffic from the current version of the Lambda function to the updated version.
 
 1. Open myDateTimeFunction.js
-2. Save the file: `myDateTimeFunction.js` using below sample:
+2. Save the file: `myDateTimeFunction.js` using the below sample:
 ```
 'use strict';
 
@@ -176,7 +176,7 @@ The Traffic shifting progress bar and the percentages in the Original and Replac
 
 
 
-- Use command to test:
+- Use the command to test:
 
 ```
 aws lambda invoke \
