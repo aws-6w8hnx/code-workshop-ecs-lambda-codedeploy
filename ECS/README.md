@@ -1,14 +1,8 @@
-# Welcome to your CDK TypeScript project
+# Tutorial: Deploy an Amazon ECS Service
 
-This is a blank project for CDK development with TypeScript.
+### Before:
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/8006439b-d42b-405d-9b55-b2d12fecf46c)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+### After:
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/41bf772a-185e-47b7-8313-0ce663d6ec72)
