@@ -198,3 +198,29 @@ Q: Why Deployment Status stuck `In progress`?
 
 - Lambda version:
 ![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/77f5823a-8a07-4b01-95c2-bf909fb8f6b0)
+
+Troubleshooting Steps:
+1. According this [doc](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-logs.html): **Logs are not supported for AWS Lambda or Amazon ECS deployments**.
+2. I checked CloudTrail, and I can see there was a `CreateLogGroup` Log Group Api call made at the time of deployment started.
+3. Based on the CloudTrail Api call, I found the `"logGroupName": "/aws/lambda/CodeDeployHook_beforeAllowTraffic"`
+4. Then, I open the log and it shows Error:
+```
+2023-06-25T11:34:11.410Z	undefined	ERROR	Uncaught Exception 	
+{
+    "errorType": "Runtime.ImportModuleError",
+    "errorMessage": "Error: Cannot find module 'aws-sdk'\nRequire stack:\n- /var/task/beforeAllowTraffic.js\n- /var/runtime/index.mjs",
+    "stack": [
+        "Runtime.ImportModuleError: Error: Cannot find module 'aws-sdk'",
+        "Require stack:",
+        "- /var/task/beforeAllowTraffic.js",
+        "- /var/runtime/index.mjs",
+        "    at _loadUserApp (file:///var/runtime/index.mjs:997:17)",
+        "    at async UserFunction.js.module.exports.load (file:///var/runtime/index.mjs:1032:21)",
+        "    at async start (file:///var/runtime/index.mjs:1195:23)",
+        "    at async file:///var/runtime/index.mjs:1201:1"
+    ]
+}
+```
+5. Found this [post](https://stackoverflow.com/questions/74792293/aws-lambda-cannot-find-module-aws-sdk-in-build-a-basic-web-application-tutoria), which mentioned that the nodejs18 using AWS SDK v3 and it does not support AWS SDK v2
+6. Update the lambda code to nodejs16 or import AWS SDk v3.
+7. AFter updating the lambda to nodejs16, deployment works fine
