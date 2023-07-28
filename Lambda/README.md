@@ -159,19 +159,19 @@ sam deploy \
 
 3. Open **CodeDeploy** console to view the deployment process
 The Traffic shifting progress bar and the percentages in the Original and Replacement boxes on this page display its progress.
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/926687af-c86f-4a7f-a78e-021f4fc00b6b)
+<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/926687af-c86f-4a7f-a78e-021f4fc00b6b">
 
 
 4. (Optional) View traffic during a deployment (Lambda console)
 5. Open the AWS Lambda console and in Aliases:
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/d55554f0-93b6-4fb3-b832-f9ee8bdd2b34)
+<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/d55554f0-93b6-4fb3-b832-f9ee8bdd2b34">
 
 
 
 
 ## Step 4: View your deployment results
 - Deployment Complete:
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/d03e0842-f8d6-4ecc-bb75-b3691ff4aa83)
+<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/d03e0842-f8d6-4ecc-bb75-b3691ff4aa83">
 
 
 
@@ -193,11 +193,11 @@ aws lambda invoke \
 ## Troubleshooting:
 Q: Why Deployment Status stuck `In progress`?
 - **CodeDeploy** && **CloudFormation**
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/2de2d462-4d4c-40d0-89fe-86783b8e3187)
+<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/2de2d462-4d4c-40d0-89fe-86783b8e3187">
 
 
 - Lambda version:
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/77f5823a-8a07-4b01-95c2-bf909fb8f6b0)
+<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/77f5823a-8a07-4b01-95c2-bf909fb8f6b0">
 
 Troubleshooting Steps:
 1. According this [doc](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-logs.html): **Logs are not supported for AWS Lambda or Amazon ECS deployments**.
