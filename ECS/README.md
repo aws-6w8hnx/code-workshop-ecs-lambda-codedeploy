@@ -1,12 +1,12 @@
 # Tutorial: Deploy an Amazon ECS Service
 
 ### Before (Blue):
-<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/1c477eb7-50a2-49ec-be89-b869659453e5">
+<img width="300" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/1c477eb7-50a2-49ec-be89-b869659453e5">
 
 
 ### After (Green):
 
-<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/6c5d7dd3-bfcd-44fc-b24e-7de3f0dce4db">
+<img width="300" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/6c5d7dd3-bfcd-44fc-b24e-7de3f0dce4db">
 
 
 ---
@@ -17,7 +17,7 @@ Step :one: : Set up your infrastructure
 2. Install cdk module, and run the command: `cd ECS/ && npm update`
 3. run the command: `cdk deploy --all --require-approval never`
 4. After you successfully deploy the app, you should see Simple PHP App website via ALB DNS Name:
-<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/388164f5-8311-4024-8760-5808cc4b704b">
+<img width="600" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/388164f5-8311-4024-8760-5808cc4b704b">
 
 
 
@@ -51,7 +51,7 @@ Step :four: : View CodeDeploy deployment status
 
 
 4. Open the DNS name of the ALB to test the deployment, and keep refreshing the browser, you should see an nginx web page
-![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/3ca2f7a5-ee0e-4573-8c6c-002f9233d777)
+<img width="750" alt="image" src="https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/3ca2f7a5-ee0e-4573-8c6c-002f9233d777">
 
 
 5. After 5 minutes, all the traffic will be routed to the new task sets.
