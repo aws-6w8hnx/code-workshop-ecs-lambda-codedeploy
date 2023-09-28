@@ -84,7 +84,7 @@ export class ecsCodeDeployStack extends cdk.Stack {
     const fn = new lambda.Function(this, 'Function', {
       runtime: lambda.Runtime.NODEJS_18_X,
       memorySize: 1024,
-      handler: 'index.main',
+      handler: 'index.handler',
       code: lambda.Code.fromAsset(path.join(__dirname, '../assets')),
       timeout: cdk.Duration.minutes(10),
       environment: {
