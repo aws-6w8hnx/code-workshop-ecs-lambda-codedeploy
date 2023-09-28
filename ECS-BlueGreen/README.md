@@ -42,4 +42,4 @@ Reference: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-app
 ![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/3e498084-0ade-421a-ac0d-cd75408a8af3)
 
 
-#### Deployment Id: d-H97KCLJX1
+#### Deployment Id: d-GZWB9KKX1
