@@ -5,7 +5,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:117645918752:task-definition/cdkcodeworkshopecsbluegreendeploystackcodeDeployTaskDef16FC7A58:1"
+        TaskDefinition: "arn:aws:ecs:us-east-1:117645918752:task-definition/cdkcodeworkshopecsbluegreendeploystackcodeDeployTaskDef16FC7A58:2"
         LoadBalancerInfo:
           ContainerName: "amazonSample"
           ContainerPort: 80
