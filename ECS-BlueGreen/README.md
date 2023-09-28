@@ -10,6 +10,10 @@ The following diagram shows how the load balancer, production and test listeners
 During an Amazon ECS deployment, there are five lifecycle hooks for testing:  
 ![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/c1afa485-8732-4dae-a904-5f5245fe9c2b)
 
+## [Deployment workflow (high level) on an Amazon ECS compute platform](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps-ecs.html#deployment-steps-what-happens)
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/12d036c8-0f53-4b18-94ca-490c1ba9dac6)
+
+
 
 ### List of lifecycle event hooks for an Amazon ECS deployment
 Reference: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#reference-appspec-file-structure-hooks-list-ecs  
