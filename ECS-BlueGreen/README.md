@@ -41,5 +41,20 @@ In an Amazon ECS deployment, event hooks run in the following order:
 Reference: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#reference-appspec-file-structure-hooks-list-ecs  
 ![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/3e498084-0ade-421a-ac0d-cd75408a8af3)
 
+---
 
-#### Deployment Id: d-GZWB9KKX1
+### Deployment Id: `d-GZWB9KKX1`
+
+
+#### ECS Service Events for replacement TaskSet:
+```
+September 28, 2023 at 23:32 (UTC+13:00)	(service cdk-code-workshop-ecs-blue-green-deploy-stack-blueService5A3A7736-HLi72fFkWqMz, taskSet ecs-svc/6423974283189490361) updated state to STEADY_STATE.	4e66b565-12e4-4482-aab6-0da78c0643bf
+
+September 28, 2023 at 23:31 (UTC+13:00)	(service cdk-code-workshop-ecs-blue-green-deploy-stack-blueService5A3A7736-HLi72fFkWqMz, taskSet ecs-svc/6423974283189490361) registered 1 targets in target-group cdk-co-green-Z1ZFVL7BWOWB 	14fd4f85-df66-4a33-8294-7afe1876dced    # <<< task set: 6423974283189490361 register到 TG: cdk-co-green-Z1ZFVL7BWOWB
+
+September 28, 2023 at 23:31 (UTC+13:00)	(service cdk-code-workshop-ecs-blue-green-deploy-stack-blueService5A3A7736-HLi72fFkWqMz, taskSet ecs-svc/6423974283189490361) has started 1 tasks: task bc03abcf83c6453583837359cc641457.	b2e7b512-9b02-4e89-9708-5995bac42ebb    # <<< task set: 6423974283189490361 创建 Task ID: bc03abcf83c6453583837359cc641457
+
+September 28, 2023 at 23:31 (UTC+13:00)	service cdk-code-workshop-ecs-blue-green-deploy-stack-blueService5A3A7736-HLi72fFkWqMz updated computedDesiredCount for taskSet ecs-svc/6423974283189490361 to 1.	7c8fdbde-c936-47ab-9f29-fb48ad182d08
+```
+
+#### Ctrail Api calls:
