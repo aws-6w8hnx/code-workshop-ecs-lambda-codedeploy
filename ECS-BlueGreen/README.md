@@ -13,6 +13,19 @@ During an Amazon ECS deployment, there are five lifecycle hooks for testing:
 ## [Deployment workflow (high level) on an Amazon ECS compute platform](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps-ecs.html#deployment-steps-what-happens)
 ![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/12d036c8-0f53-4b18-94ca-490c1ba9dac6)
 
+### [What happens during an Amazon ECS deployment](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-steps-ecs.html#deployment-steps-what-happens)
+![image](https://github.com/aws-6w8hnx/code-workshop-ecs-lambda-codedeploy/assets/29943707/a65e536e-44d3-46a8-9002-ca5e4dd91187)
+
+| **Lifecycle event** | **Lifecycle event action** |
+|:--------------------|:---------------------------|
+| `BeforeInstal`l (a hook for Lambda functions) | Run Lambda functions. |
+| Install| Set up the replacement task set. |
+| `AfterInstall` (a hook for Lambda functions) | Run Lambda functions. |
+| AllowTestTraffic | Route traffic from the test listener to target group 2. |
+| `AfterAllowTestTraffic` (a hook for Lambda functions) | Run Lambda functions. |
+| `BeforeAllowTraffic` (a hook for Lambda functions) | Run Lambda functions. |
+| AllowTraffic | Route traffic from the production listener to target group 2. |
+| `AfterAllowTraffic` (a hook for Lambda functions) | Run Lambda functions. |
 
 
 ### List of lifecycle event hooks for an Amazon ECS deployment
